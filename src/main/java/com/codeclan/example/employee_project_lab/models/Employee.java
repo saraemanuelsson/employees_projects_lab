@@ -27,8 +27,7 @@ public class Employee {
     @JsonIgnoreProperties({"employees"})
     private Department department;
 
-    public Employee(Long id, String firstName, String lastName, String employeeNumber, Department department) {
-        this.id = id;
+    public Employee(String firstName, String lastName, String employeeNumber, Department department) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.employeeNumber = employeeNumber;
