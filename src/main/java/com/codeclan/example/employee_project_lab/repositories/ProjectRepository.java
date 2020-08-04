@@ -1,4 +1,8 @@
 package com.codeclan.example.employee_project_lab.repositories;
 
-public interface ProjectRepository {
+import com.codeclan.example.employee_project_lab.models.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+
+public interface ProjectRepository extends JpaRepository<Project, Long> {
 }
